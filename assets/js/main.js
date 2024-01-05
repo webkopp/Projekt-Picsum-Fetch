@@ -13,7 +13,7 @@
 // ✨ Bonus
 // - Schaue dir den Parameter "?page" an und überlege, wie du ihn einsetzen könntest.
 
-// console.log(fetch("https://picsum.photos/v2/list"))
+console.log(fetch("https://picsum.photos/v2/list"))
 
 fetch("https://picsum.photos/v2/list")
     .then((response) => response.json())
