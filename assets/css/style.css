@@ -10,6 +10,8 @@ body {
     font-size: 0.7rem;
     text-align: center;
     margin: 0.5rem;
+    background-color: rgb(45, 45, 45);
+    color: white;
 }
 
 figure {
@@ -29,6 +31,7 @@ img {
 figcaption {
     background: padding-box;
     background-color: color-mix(in srgb, color percentage, color percentage);
+    padding: 1rem;
 }
 
 button {

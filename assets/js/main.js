@@ -13,7 +13,7 @@
 // ✨ Bonus
 // - Schaue dir den Parameter "?page" an und überlege, wie du ihn einsetzen könntest.
 
-console.log(fetch("https://picsum.photos/v2/list"))
+// console.log(fetch("https://picsum.photos/v2/list"))
 
 fetch("https://picsum.photos/v2/list")
     .then((response) => response.json())
@@ -25,12 +25,14 @@ fetch("https://picsum.photos/v2/list")
             const figure = document.createElement("figure")
             const image = document.createElement("img")
             image.src = `https://picsum.photos/id/${item.id}/200/200`
+            image.url = `https://picsum.photos/id/${item.URL}/full`
+
             const caption = document.createElement("figcaption")
             caption.textContent = `Photo by ${item.author}`
             const button = document.createElement("button")
             button.textContent = "See more"
             button.addEventListener("click", () => {
-                window.open(`https://picsum.photos/id/${item.id}/full/URL`)
+                window.open(`https://picsum.photos/id/${item.id}`)
             })
             figure.appendChild(image)
             figure.appendChild(caption)
