@@ -1,11 +1,11 @@
 *** Picsum-Fetch ***
 
-Beschreibung
-Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.de erstellt. Es handelt sich um einen Movie Datenbank, bei der man Filme nach Titel und Bewertung sortieren und filtern kann.
+<!-- Beschreibung
+Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.de erstellt. Es handelt sich um eine Galerie, für die man die API von Picsum verwendet.
 
 Die Anwendung bietet folgende Möglichkeiten:
 - Bei der Movie Datenbank kann über ein Input-Feld und dem Button "Search" nach Filmen gesucht werden.
-- Die User:innen können über die Button "Titel Up" und "Titel Down" die Filme nach Namen sortieren und über den Button "Best Rate" nach Filmen mit Top-Bewertung filtern.
+- Die User:innen können über die Button "Titel Up" und "Titel Down" die Filme nach Namen sortieren und über den Button "Best Rate" nach Filmen mit Top-Bewertung filtern. -->
 
 Werkzeuge/Technologien
 HTML5
@@ -13,25 +13,24 @@ CSS3
 JavaScript
 
 GitHub Live-Vorschau
-Du findest eine Live Vorschau auf GitHub: 
+Du findest eine Live Vorschau auf GitHub: https://webkopp.github.io/Projekt-Picsum-Fetch/
 
 GitHub-Repository
-Du findest das gesamte Projekt auf GitHub: 
+Du findest das gesamte Projekt auf GitHub: https://github.com/webkopp/Projekt-Picsum-Fetch
 
 Aufgaben
-- In dieser Übung wirst du eine Movie Datenbank mithilfe von JavaScript erstellen, sortieren und filtern.
-- Für diese Aufgabe benötigst Du möglicherweise die folgenden Methoden: sort(), filter(), forEach(), map().
-- Das Movie-Array ist vorgegeben (siehe Code-Snippet).
+- Für dieses Projekt verwendest du die API von Picsum, um eine Galerie zu erstellen.
+- Diese beiden Links sind wichtig für die Umsetzung, schau sie dir an:
+    - [picsum](https://picsum.photos/)
+    - [picsum list](https://picsum.photos/v2/list/)
+
+Phase I:
+Nutze die https://picsum.photos/v2/list und lass dir die Liste in der Console ausgeben.
+
+Phase II:
+Da du dir die Daten jetzt schon in der Konsole ausgeben lassen kannst, darfst du als nächstes für jeden Datensatz eine Kombination aus Bild und Autor:in in ein figure-Element wrappen und in deinem HTML ausgeben lassen.
+Die Elemente in deinem HTML sollten dann so aussehen: 
+https://uploads-ssl.webflow.com/62d9141584e7b750edcafa6a/64ba8f8b4b0c2ac2a4874331_API-fetch-level-2_1-example.png
 
 ✨ Bonus
-- Erstelle die Genres mit Hilfe von einem zweiten array loop.
-- Erstelle ein schöneres Design.
-- Erweitere deine Datenbank um beliebige weitere Funktionen, diese könnten z.B. sein:
-- Filter nach Genre
-- “Film not found”- Ansicht
-- Suche nach Jahr
-- Möglichkeit einen neuen Film hinzuzufügen
-
-Anmerkungen
-Dieses Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.de erstellt.
-Die Anwendung ermöglicht das Sortieren und Filtern von Filmen in einer Datenbank.
+- Schaue dir den Parameter "?page" an und überlege, wie du ihn einsetzen könntest.
