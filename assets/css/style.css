@@ -5,8 +5,11 @@
 }
 
 body {
-    font-family: "monospace";
-    font-size: 1rem;
+    width: 100vw;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 0.5rem;
 }
 
 figure {
@@ -15,12 +18,26 @@ figure {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 130px;
+    border-radius: 0.2rem;
     object-fit: cover;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
+    --width-img: calc((100vw - var(--padding-global)) / 3 - var(--gap) * 2);
 }
 
 figcaption {
-    text-align: center;
+    background: padding-box;
+    background-color: color-mix(in srgb, color percentage, color percentage);
+}
+
+button {
+    width: 45%;
+    padding: 3% 1%;
+    margin-top: 3%;
+    border-radius: 0.2rem;
+    border-style: none;
+    background: -webkit-repeating-linear-gradient(lightgrey, white, lightgray);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
 }

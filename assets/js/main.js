@@ -20,69 +20,22 @@ fetch("https://picsum.photos/v2/list")
     .then((data) => {
         const gallery = document.getElementById("gallery")
         console.log(gallery)
+
         data.forEach(item => {
             const figure = document.createElement("figure")
             const image = document.createElement("img")
             image.src = `https://picsum.photos/id/${item.id}/200/200`
             const caption = document.createElement("figcaption")
             caption.textContent = `Photo by ${item.author}`
+            const button = document.createElement("button")
+            button.textContent = "See more"
+            button.addEventListener("click", () => {
+                window.open(`https://picsum.photos/id/${item.id}/full/URL`)
+            })
             figure.appendChild(image)
             figure.appendChild(caption)
+            figure.appendChild(button)
             gallery.appendChild(figure)
         })
-
-
-        productsAusDemJson.forEach((product) => {
-            const productTitle = product.title
-            // console.log(productTitle);
-            const productDesc = product.description
-            // console.log(productDesc);
-            const productImg = product.images[0]
-            // console.log(productImg);
-            const productPrice = product.price
-
-            const productId = product.id
-
-
-            // erstellt ein Div
-            let productItem = document.createElement("div")
-
-
-            // Title
-            let h2 = document.createElement("h2")
-            h2.textContent = productTitle
-            productItem.appendChild(h2)
-
-
-            // Beschreibung
-            let p = document.createElement("p")
-            p.textContent = productDesc
-            productItem.appendChild(p)
-
-            // Preis
-            let h5 = document.createElement("h5")
-            h5.textContent = `${productPrice} €`
-            productItem.appendChild(h5)
-
-
-            // Img
-            const img = document.createElement("img")
-            img.setAttribute("src", productImg)
-            img.setAttribute("alt", productTitle)
-            productItem.appendChild(img)
-
-
-            // btn
-            let moreInfoBtn = document.createElement("button")
-            moreInfoBtn.textContent = "More Information"
-            moreInfoBtn.addEventListener("click", () => {
-                fetch(`https://dummyjson.com/products/${productId}`)
-                    .then((resp) => resp.json())
-                    .then((data) => console.log(data))
-                    .catch((error) => console.log(error))
-            })
-            productItem.appendChild(moreInfoBtn)
-            document.querySelector("#products").appendChild(productItem)
-        })
     })
-    .catch((error) => console.log("die Küche brennt leider", error))
+    .catch((error) => console.log("der link geht leider nicht", error))
