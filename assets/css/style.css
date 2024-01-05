@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "monospace";
+    font-size: 1rem;
+}
+
+figure {
+    display: inline-block;
+    margin: 1rem;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+figcaption {
+    text-align: center;
+}

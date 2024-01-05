@@ -1,9 +1,9 @@
 *** Picsum-Fetch ***
 
-<!-- Beschreibung
+Beschreibung
 Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.de erstellt. Es handelt sich um eine Galerie, für die man die API von Picsum verwendet.
 
-Die Anwendung bietet folgende Möglichkeiten:
+<!-- Die Anwendung bietet folgende Möglichkeiten:
 - Bei der Movie Datenbank kann über ein Input-Feld und dem Button "Search" nach Filmen gesucht werden.
 - Die User:innen können über die Button "Titel Up" und "Titel Down" die Filme nach Namen sortieren und über den Button "Best Rate" nach Filmen mit Top-Bewertung filtern. -->
 
